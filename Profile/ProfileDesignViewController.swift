@@ -131,7 +131,7 @@ class ProfileDesignViewController: UIViewController {
         backButton.widthAnchor.constraint(equalToConstant: 60).isActive = true
         backButton.backgroundColor = UIColor(red: 0.22, green: 0.596, blue: 0.953, alpha: 1)
         backButton.layer.cornerRadius = 4
-        backButton.leftAnchor.constraint(equalTo: safeArea.leftAnchor, constant: 16).isActive = true
+        backButton.leftAnchor.constraint(equalTo: safeArea.leftAnchor, constant: 10).isActive = true
         backButton.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 10).isActive = true
 
         backButton.addTarget(self, action: #selector(backProfile), for: .touchUpInside)
@@ -162,13 +162,7 @@ class ProfileDesignViewController: UIViewController {
         // 이미지 넣는곳
         UserPic.translatesAutoresizingMaskIntoConstraints = false
         
-        
-        // 이미지 탑 위치를부분을 NSLayoutConstraint로 적용해보기
-//        UserPic.topAnchor.constraint(equalTo: UserName.bottomAnchor, constant: 14).isActive = true
-        
-//        let constraint1 = NSLayoutConstraint(item: UserName, attribute: .bottom, relatedBy: .equal, toItem: UserPic, attribute: .top, multiplier: 1.0, constant: -14)
-//
-//        view.addConstraints([constraint1])
+
 
         UserPic.image = UIImage(named: "picture1")
         // 여기서부터 뭔가 안됨???뭐지? 사진 크기를 설정 안해줘서 안됐던거임~
@@ -390,7 +384,7 @@ class ProfileDesignViewController: UIViewController {
         Message.setTitleColor(.black, for: .normal)
         Message.titleLabel?.font = UIFont(name: "OpenSans-Bold", size: 14)
         Message.heightAnchor.constraint(equalToConstant: 30).isActive = true
-        Message.widthAnchor.constraint(equalToConstant: (UIScreen.main.bounds.width-72) / 2).isActive = true
+        Message.widthAnchor.constraint(equalToConstant: (UIScreen.main.bounds.width-76) / 2).isActive = true
         Message.backgroundColor = .white
         Message.layer.cornerRadius = 4
         Message.layer.borderWidth = 1.5
@@ -404,7 +398,7 @@ class ProfileDesignViewController: UIViewController {
         Follow.setTitleColor(.white, for: .normal)
         Follow.titleLabel?.font = UIFont(name: "OpenSans-Bold", size: 14)
         Follow.heightAnchor.constraint(equalToConstant: 30).isActive = true
-        Follow.widthAnchor.constraint(equalToConstant: (UIScreen.main.bounds.width-72) / 2).isActive = true
+        Follow.widthAnchor.constraint(equalToConstant: (UIScreen.main.bounds.width-76) / 2).isActive = true
         Follow.backgroundColor = UIColor(red: 0.22, green: 0.596, blue: 0.953, alpha: 1)
         Follow.layer.cornerRadius = 4
         Follow.rightAnchor.constraint(equalTo: Message.leftAnchor, constant: -8).isActive = true
@@ -433,7 +427,7 @@ class ProfileDesignViewController: UIViewController {
         Grid.leftAnchor.constraint(equalTo: Nav_gallary.leftAnchor, constant: ((UIScreen.main.bounds.width/3)/2)-11.25).isActive = true
         
         Grid.topAnchor.constraint(equalTo: Divider.bottomAnchor, constant: 8).isActive = true
-        
+        // mvvm 은 여기에서 뷰 모델을 추가? 뷰 모델?? 뷰 모델에다가 데이터를 넣어주는것?
         
         
         Section_indicator.translatesAutoresizingMaskIntoConstraints = false
@@ -505,7 +499,7 @@ extension ProfileDesignViewController: UICollectionViewDelegateFlowLayout {
     
     // 사이즈
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (collectionView.bounds.width - 4)/3, height: (collectionView.bounds.width - 4)/3)
+        return CGSize(width: (collectionView.bounds.width - 2)/3, height: (collectionView.bounds.width - 2)/3)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {

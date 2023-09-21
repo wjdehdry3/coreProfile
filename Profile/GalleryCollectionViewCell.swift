@@ -37,7 +37,7 @@ class GalleryCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(galleryImageView)
     }
     
-    // Cell 객체 autoLayout
+    // Cell 객체 autoLayout 스냅킷 함 써보고 싶었음 ㅎ
     private func autoLayout() {
         
         galleryImageView.snp.makeConstraints { make in
