@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 
 extension ProfileDesignViewController{
+    
+    
     func addView(){
         // 요소를 추가해 주려면 무조건 addSubbiew를 넣어주야 함
         self.view.addSubview(backButton)
@@ -51,6 +53,8 @@ extension ProfileDesignViewController{
         self.Rectangle.addSubview(myMenu)
         self.Rectangle.addSubview(DividerRectagle)
     }
+    // ios적으로 생각하면 이 화면에도 구간. 덩어리로 나눠져 있을것이다 . 그걸 하나의 커스텀뷰 클래스로 만들면 그 안에서 오토레이아웃을 잡고 뷰를 거기서 만들고 거기서 청크 단위로 ? 덩어리 단위로 클래스를 만들어서 이렇게 길게 안써도 된다 파트를 나누는 방식? 파트를 나눠서 클래스를 만들고 이저 인포뷰를 하나 만들어서 클래스로서 뷰를 만들고 세팅하고 오토 레이아웃을 만들고 뷰 컨트롤러에선 그것을 묶고 있는 상위 뷰 클래스 몇개만 있다 헤더 밑에 유저 인포뷰를 오토레이아웃으로 잡아주고 한 뷰로 세네가지만 잡아주기 IOS는 객체적으로 다루는게 중요하다.
+    
     func autoLayout() {
         let safeArea = view.safeAreaLayoutGuide
         view.backgroundColor = .white

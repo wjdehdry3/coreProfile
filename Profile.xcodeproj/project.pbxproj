@@ -92,11 +92,8 @@
 		AB4DF2102ABD72880050E49D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AB4DF2122ABD72E70050E49D /* ProfileDesignView.swift */,
-				AB4DF2142ABD78EB0050E49D /* ProfileView.swift */,
-				AB4DF1F82ABC315C0050E49D /* GalleryCollectionViewCell.swift */,
-				AB4DF20C2ABCBACF0050E49D /* CoreDataViewCell.swift */,
-				AB4DF2082ABCB7520050E49D /* CoreDataView.storyboard */,
+				AB4DF2162ABD7B120050E49D /* MVC */,
+				AB4DF2172ABD7B210050E49D /* MVVM */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -110,6 +107,25 @@
 				AB4DF2032ABCB4840050E49D /* CoreDataViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		AB4DF2162ABD7B120050E49D /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				AB4DF2122ABD72E70050E49D /* ProfileDesignView.swift */,
+				AB4DF1F82ABC315C0050E49D /* GalleryCollectionViewCell.swift */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		AB4DF2172ABD7B210050E49D /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				AB4DF2142ABD78EB0050E49D /* ProfileView.swift */,
+				AB4DF2082ABCB7520050E49D /* CoreDataView.storyboard */,
+				AB4DF20C2ABCBACF0050E49D /* CoreDataViewCell.swift */,
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 		ABC49AD22AB9875A0073AAD1 = {
