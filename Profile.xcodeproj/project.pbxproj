@@ -17,6 +17,8 @@
 		AB4DF2092ABCB7520050E49D /* CoreDataView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4DF2082ABCB7520050E49D /* CoreDataView.storyboard */; };
 		AB4DF20D2ABCBACF0050E49D /* CoreDataViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4DF20C2ABCBACF0050E49D /* CoreDataViewCell.swift */; };
 		AB4DF20F2ABCDA620050E49D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4DF20E2ABCDA620050E49D /* CoreDataManager.swift */; };
+		AB4DF2132ABD72E70050E49D /* ProfileDesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4DF2122ABD72E70050E49D /* ProfileDesignView.swift */; };
+		AB4DF2152ABD78EB0050E49D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4DF2142ABD78EB0050E49D /* ProfileView.swift */; };
 		ABC49ADF2AB9875A0073AAD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC49ADE2AB9875A0073AAD1 /* AppDelegate.swift */; };
 		ABC49AE12AB9875A0073AAD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC49AE02AB9875A0073AAD1 /* SceneDelegate.swift */; };
 		ABC49AE32AB9875A0073AAD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC49AE22AB9875A0073AAD1 /* ViewController.swift */; };
@@ -42,6 +44,8 @@
 		AB4DF2082ABCB7520050E49D /* CoreDataView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreDataView.storyboard; sourceTree = "<group>"; };
 		AB4DF20C2ABCBACF0050E49D /* CoreDataViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewCell.swift; sourceTree = "<group>"; };
 		AB4DF20E2ABCDA620050E49D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		AB4DF2122ABD72E70050E49D /* ProfileDesignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDesignView.swift; sourceTree = "<group>"; };
+		AB4DF2142ABD78EB0050E49D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		ABC49ADB2AB9875A0073AAD1 /* Profile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Profile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC49ADE2AB9875A0073AAD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABC49AE02AB9875A0073AAD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,9 +83,33 @@
 		AB4DF2002ABC852D0050E49D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AB4DF20E2ABCDA620050E49D /* CoreDataManager.swift */,
 				AB4DF2012ABC85490050E49D /* UserData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AB4DF2102ABD72880050E49D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB4DF2122ABD72E70050E49D /* ProfileDesignView.swift */,
+				AB4DF2142ABD78EB0050E49D /* ProfileView.swift */,
+				AB4DF1F82ABC315C0050E49D /* GalleryCollectionViewCell.swift */,
+				AB4DF20C2ABCBACF0050E49D /* CoreDataViewCell.swift */,
+				AB4DF2082ABCB7520050E49D /* CoreDataView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB4DF2112ABD72910050E49D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ABC49AE22AB9875A0073AAD1 /* ViewController.swift */,
+				ABC49AF52AB987FD0073AAD1 /* ProfileDesignViewController.swift */,
+				AB4DF1FE2ABC822A0050E49D /* ProfileViewController.swift */,
+				AB4DF2032ABCB4840050E49D /* CoreDataViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		ABC49AD22AB9875A0073AAD1 = {
@@ -109,18 +137,12 @@
 		ABC49ADD2AB9875A0073AAD1 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				AB4DF2112ABD72910050E49D /* Controller */,
+				AB4DF2102ABD72880050E49D /* View */,
 				AB4DF2002ABC852D0050E49D /* Model */,
 				ABC49ADE2AB9875A0073AAD1 /* AppDelegate.swift */,
 				ABC49AE02AB9875A0073AAD1 /* SceneDelegate.swift */,
-				ABC49AE22AB9875A0073AAD1 /* ViewController.swift */,
 				AB4DF2052ABCB60A0050E49D /* Task.xcdatamodeld */,
-				ABC49AF52AB987FD0073AAD1 /* ProfileDesignViewController.swift */,
-				AB4DF1F82ABC315C0050E49D /* GalleryCollectionViewCell.swift */,
-				AB4DF1FE2ABC822A0050E49D /* ProfileViewController.swift */,
-				AB4DF2032ABCB4840050E49D /* CoreDataViewController.swift */,
-				AB4DF20E2ABCDA620050E49D /* CoreDataManager.swift */,
-				AB4DF20C2ABCBACF0050E49D /* CoreDataViewCell.swift */,
-				AB4DF2082ABCB7520050E49D /* CoreDataView.storyboard */,
 				ABC49AE42AB9875A0073AAD1 /* Main.storyboard */,
 				ABC49AEA2AB9875D0073AAD1 /* Assets.xcassets */,
 				ABC49AEC2AB9875D0073AAD1 /* LaunchScreen.storyboard */,
@@ -259,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB4DF20D2ABCBACF0050E49D /* CoreDataViewCell.swift in Sources */,
+				AB4DF2152ABD78EB0050E49D /* ProfileView.swift in Sources */,
 				AB4DF2042ABCB4840050E49D /* CoreDataViewController.swift in Sources */,
 				ABC49AE32AB9875A0073AAD1 /* ViewController.swift in Sources */,
 				AB4DF1F92ABC315C0050E49D /* GalleryCollectionViewCell.swift in Sources */,
@@ -266,6 +289,7 @@
 				ABC49ADF2AB9875A0073AAD1 /* AppDelegate.swift in Sources */,
 				AB4DF1FF2ABC822A0050E49D /* ProfileViewController.swift in Sources */,
 				ABC49AE12AB9875A0073AAD1 /* SceneDelegate.swift in Sources */,
+				AB4DF2132ABD72E70050E49D /* ProfileDesignView.swift in Sources */,
 				AB4DF2072ABCB60A0050E49D /* Task.xcdatamodeld in Sources */,
 				ABC49AF62AB987FD0073AAD1 /* ProfileDesignViewController.swift in Sources */,
 				AB4DF20F2ABCDA620050E49D /* CoreDataManager.swift in Sources */,
