@@ -92,10 +92,10 @@ class ProfileDesignViewController: UIViewController {
     }
 
     @objc func moveProfile() {
-        let ProfileDesignVC = ProfileViewController()
-        ProfileDesignVC.modalTransitionStyle = .coverVertical
-        ProfileDesignVC.modalPresentationStyle = .fullScreen
-        self.present(ProfileDesignVC, animated: true , completion: nil)
+//        let ProfileDesignVC = ProfileViewController()
+//        ProfileDesignVC.modalTransitionStyle = .coverVertical
+//        ProfileDesignVC.modalPresentationStyle = .fullScreen
+//        self.present(ProfileDesignVC, animated: true , completion: nil)
     }
     @objc func backProfile() {
         self.presentingViewController?.dismiss(animated: true)

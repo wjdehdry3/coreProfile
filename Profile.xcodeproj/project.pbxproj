@@ -19,6 +19,7 @@
 		AB4DF20F2ABCDA620050E49D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4DF20E2ABCDA620050E49D /* CoreDataManager.swift */; };
 		AB4DF2132ABD72E70050E49D /* ProfileDesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4DF2122ABD72E70050E49D /* ProfileDesignView.swift */; };
 		AB4DF2152ABD78EB0050E49D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4DF2142ABD78EB0050E49D /* ProfileView.swift */; };
+		AB50C2212ACF66E300FDBD77 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = AB50C2202ACF66E300FDBD77 /* FSCalendar */; };
 		ABC49ADF2AB9875A0073AAD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC49ADE2AB9875A0073AAD1 /* AppDelegate.swift */; };
 		ABC49AE12AB9875A0073AAD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC49AE02AB9875A0073AAD1 /* SceneDelegate.swift */; };
 		ABC49AE32AB9875A0073AAD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC49AE22AB9875A0073AAD1 /* ViewController.swift */; };
@@ -66,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7C8BF8F7AFADEDAA07D69B9 /* Pods_Profile.framework in Frameworks */,
+				AB50C2212ACF66E300FDBD77 /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,11 +94,8 @@
 		AB4DF2102ABD72880050E49D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AB4DF2122ABD72E70050E49D /* ProfileDesignView.swift */,
-				AB4DF2142ABD78EB0050E49D /* ProfileView.swift */,
-				AB4DF1F82ABC315C0050E49D /* GalleryCollectionViewCell.swift */,
-				AB4DF20C2ABCBACF0050E49D /* CoreDataViewCell.swift */,
-				AB4DF2082ABCB7520050E49D /* CoreDataView.storyboard */,
+				AB4DF2162ABD7B120050E49D /* MVC */,
+				AB4DF2172ABD7B210050E49D /* MVVM */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -110,6 +109,25 @@
 				AB4DF2032ABCB4840050E49D /* CoreDataViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		AB4DF2162ABD7B120050E49D /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				AB4DF2122ABD72E70050E49D /* ProfileDesignView.swift */,
+				AB4DF1F82ABC315C0050E49D /* GalleryCollectionViewCell.swift */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		AB4DF2172ABD7B210050E49D /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				AB4DF2142ABD78EB0050E49D /* ProfileView.swift */,
+				AB4DF2082ABCB7520050E49D /* CoreDataView.storyboard */,
+				AB4DF20C2ABCBACF0050E49D /* CoreDataViewCell.swift */,
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 		ABC49AD22AB9875A0073AAD1 = {
@@ -178,6 +196,9 @@
 			dependencies = (
 			);
 			name = Profile;
+			packageProductDependencies = (
+				AB50C2202ACF66E300FDBD77 /* FSCalendar */,
+			);
 			productName = Profile;
 			productReference = ABC49ADB2AB9875A0073AAD1 /* Profile.app */;
 			productType = "com.apple.product-type.application";
@@ -206,6 +227,9 @@
 				Base,
 			);
 			mainGroup = ABC49AD22AB9875A0073AAD1;
+			packageReferences = (
+				AB50C21F2ACF66E300FDBD77 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+			);
 			productRefGroup = ABC49ADC2AB9875A0073AAD1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -510,6 +534,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AB50C21F2ACF66E300FDBD77 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB50C2202ACF66E300FDBD77 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB50C21F2ACF66E300FDBD77 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		AB4DF2052ABCB60A0050E49D /* Task.xcdatamodeld */ = {

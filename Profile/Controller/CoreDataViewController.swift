@@ -26,16 +26,8 @@ class CoreDataViewController: UIViewController {
    
     
     override func viewDidLoad() {
-        let datePicker = UIDatePicker()
-        datePicker.datePickerMode = .date
-        datePicker.locale = Locale(identifier: "ko_KR")
-        
-//        print(str[range].prefix(11))
-        
-     
-        
+    
         super.viewDidLoad()
-        
         
         
     }
@@ -43,8 +35,8 @@ class CoreDataViewController: UIViewController {
         let datePicker = UIDatePicker()
         datePicker.datePickerMode = .date
         datePicker.locale = Locale(identifier: "ko_KR")
-        
-        
+        datePicker.timeZone = TimeZone(abbreviation: "KST")
+
         
         let alert = UIAlertController(title: "", message: "목록을 생성해보세요", preferredStyle: UIAlertController.Style.alert)
         
@@ -65,8 +57,6 @@ class CoreDataViewController: UIViewController {
         
         present(alert, animated: true)
     }
-    
-
 }
 
 extension CoreDataViewController :UITableViewDelegate, UITableViewDataSource{
@@ -97,6 +87,7 @@ extension CoreDataViewController :UITableViewDelegate, UITableViewDataSource{
         
         return cell
     }
+    
     @objc func tSwitch (sender : UISwitch)  {
         
         let index = sender.tag
@@ -105,6 +96,7 @@ extension CoreDataViewController :UITableViewDelegate, UITableViewDataSource{
         
         coreTableView.reloadSections(IndexSet(0...0), with: .automatic)
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let alert = UIAlertController(title: "", message: "삭제와 수정.", preferredStyle: UIAlertController.Style.alert)
         
