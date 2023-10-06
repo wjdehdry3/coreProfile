@@ -5,6 +5,9 @@
 //  Created by 정동교 on 2023/09/22.
 //
 
+//https://github.com/WenchaoD/FSCalendar.git
+
+// 수정 내역
 import Foundation
 import UIKit
 
@@ -49,6 +52,7 @@ extension ProfileDesignViewController{
         self.Nav_gallary.addSubview(Divider)
         self.Nav_gallary.addSubview(Section_indicator)
         self.Nav_gallary.addSubview(Grid)
+        
         
         self.Rectangle.addSubview(myMenu)
         self.Rectangle.addSubview(DividerRectagle)
