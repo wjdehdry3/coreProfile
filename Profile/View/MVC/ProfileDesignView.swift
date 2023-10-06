@@ -11,6 +11,15 @@
 import Foundation
 import UIKit
 
+// 로컬환경 내 컴퓨터
+// 코드를 씁니다 그리고 커밋해!
+// push 를 해줍니다 누구한테? main이나 내가 만든 brach 한테
+
+// 깃헙 레포지토리
+// main이랑 branch가 푸쉬 넣어준 친구가 반응함 아 커밋했구나!
+
+// 풀 리퀘스트로 내가 만든 브렌치에서 - main브렌치로 머지~
+
 extension ProfileDesignViewController{
     
     
